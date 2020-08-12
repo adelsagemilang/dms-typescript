@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component tests renders correctly 1`] = `
+<withHelpersModifiers(Navbar)
+  id="navbar-fixed-top"
+>
+  <withHelpersModifiers(NavbarBrand)>
+    <withHelpersModifiers(NavbarItem)
+      hasDropdown={true}
+      isHoverable={true}
+    >
+      <BackButton />
+      <DropdownMenu />
+    </withHelpersModifiers(NavbarItem)>
+    <withHelpersModifiers(NavbarItem)>
+      <img
+        alt="Logan logo"
+        src="/../images/logo.png"
+      />
+    </withHelpersModifiers(NavbarItem)>
+  </withHelpersModifiers(NavbarBrand)>
+  <withHelpersModifiers(NavbarMenu)>
+    <withHelpersModifiers(NavbarEnd)>
+      <Search />
+      <Component />
+      <Profile
+        session={false}
+      />
+    </withHelpersModifiers(NavbarEnd)>
+  </withHelpersModifiers(NavbarMenu)>
+</withHelpersModifiers(Navbar)>
+`;

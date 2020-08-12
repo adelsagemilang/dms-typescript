@@ -1,0 +1,217 @@
+@import '../_variables'
+@import '../_mixin'
+
+.order-detail-container
+	margin-top: -40px
+	margin-right: -35px
+	margin-left: -35px
+.delivery-order
+  background: white
+  @include border-radius(5px)
+  @include box-shadow(0px, 3px, 6px, #0000000B)
+  margin-top: 18px
+  margin-bottom: 15px
+  &:last-child
+    margin-bottom: 55px
+  .field
+    border-right: solid 1px $border-grey
+  .columns
+    margin-left: 0
+    padding: 5px
+  .column
+    padding: 5px
+    &:last-child .field
+      border: none
+  .date
+    position: absolute
+    right: 12px
+    bottom: 7px
+    color: $soft-grey
+    font-size: 7px
+  .control
+    font-size: 11px !important
+  .field .label
+    font-size: 8px !important
+
+.modal
+  font-size: 12px
+
+  & > .header
+    width: 100%
+    border-bottom: 1px solid gray
+    font-size: 18px
+    text-align: center
+    padding: 5px
+
+  & > .content
+    width: 100%
+    padding: 10px 5px
+
+  & > .actions
+    width: 100%
+    padding: 10px 5px
+    margin: auto
+    text-align: center
+
+  & > .close
+    cursor: pointer
+    position: absolute
+    display: block
+    padding: 2px 5px
+    line-height: 20px
+    right: -10px
+    top: -10px
+    font-size: 24px
+    background: #ffffff
+    border-radius: 18px
+    border: 1px solid #cfcece
+
+.delivery-order-content
+  width: 550px !important
+  border-radius: 7px
+  .modal-box
+    position: relative
+    padding: 50px
+    font-size: 8px
+    .close
+      color: white
+      font-size: 20px
+      text-align: center
+      width: 30px
+      height: 30px
+      display: block
+      position: absolute
+      right: 10px
+      top: 5px
+      border-radius: 50%
+      background: $soft-grey
+      &:hover
+        text-decoration: none
+    .header
+      margin-bottom: 25px
+      .field
+        margin-top: 20px
+    .title
+      padding: 0
+      margin: 0
+      font-size: 50px
+      color: $soft-grey !important
+    .label
+      font-size: 8px
+    .control
+      font-size: 11px
+    .details
+      .columns
+        margin-bottom: 25px !important
+        .column
+          padding: 0 0 0 10px
+          border-right: solid 1px $grey-dark
+          &:last-child
+            border: none
+
+#overlay-maps-content
+  z-index: 10
+  width: 100%
+  height: 100%
+  position: absolute
+  padding-top: 20px
+
+.destination
+  .title
+    font-size: 17px
+    margin: 0 !important
+    padding: 0
+    color: black !important
+  .subtitle
+    font-size: 15px
+    margin: 0 !important
+    padding: 0
+  small
+    font-size: 10px
+    display: block
+  span
+    font-size: 12px
+  .detail
+    padding: 0
+    padding-top: 5px !important
+
+.show-more
+  color: $blue
+  font-size: 10px
+  text-align: right
+  margin-top: -20px
+  padding-right: 25px
+.histories
+  margin-top: 20px
+  .history
+    margin-bottom: 70px !important
+    font-size: 14px
+    position: relative
+    &.alert
+      h1, .kpi
+        color: $dark-red !important
+    &.empty
+      h1, .kpi
+        color: $soft-grey !important
+    &:before
+      content: ''
+      position: absolute
+      width: 1px
+      height: 30px
+      left: 20px
+      border: dashed 1px $border-grey
+      top: 38px
+    &:last-child
+      &:before
+        border: none
+    .kpi
+      padding-right: 0
+    > .column
+      border-right: solid 1px $border-grey
+      padding-top: 5px !important
+      padding-bottom: 0 !important
+      &:nth-of-type(2)
+        border-left: solid 1px $border-grey
+      &.is-4
+        border: none
+        .columns
+          margin-top: 0px !important
+    &.empty
+      .column
+        border-right: none
+    &.header
+      font-size: 12px
+      color: $soft-grey
+      margin-bottom: 20px !important
+      font-weight: bold
+      margin-top: -30px
+      &:before
+        display: none
+      > .column
+        border: none
+    .title
+      font-size: 14px
+      margin: 0 !important
+      padding: 0
+      color: black !important
+    .subtitle
+      font-size: 12px
+      margin: 0 !important
+      padding: 0
+    small
+      font-size: 10px
+      display: block
+    span
+      font-size: 12px
+    .detail
+      padding: 0
+      // padding-top: 5px !important
+    .icon
+      border: none
+      margin-top: -12px
+
+#maps-iframe
+  height: 100%
+  margin-left: -0.75rem
+  position: absolute
+  z-index: 0 !important

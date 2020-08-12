@@ -1,0 +1,49 @@
+@import 'styles/sass/_variables.sass'
+
+
+.summary 
+	.column.is-3
+		.panel
+			height: 100%
+			display: flex
+			flex-direction: column
+
+			> div
+				flex: 1
+
+			.panel-block:first-child
+				flex: unset
+
+@media(max-width: $screen-tablet)
+	.title.is-7
+		font-size: 1rem
+	
+	.summary .box
+		.columns:first-child
+			.flex-end
+				display: block !important
+
+				small
+					font-size: 1rem !important
+
+				.is-6
+					font-size: 1.5rem !important
+
+			.flex-align-center
+				justify-content: center
+
+		.is-one-third
+			small
+				font-size: 1rem !important
+
+			h1 .has-text-primary
+				font-size: 1.5rem !important
+				margin-right: 5px
+		.column
+			text-align: center
+
+		.flex-end, .flex-space
+			justify-content: center
+
+			small, span
+				display: block

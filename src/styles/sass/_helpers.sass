@@ -1,0 +1,92 @@
+// Spacing Helpers (margin & padding)
+$spaceamounts: (0, 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100) // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right) // Leave this variable alone
+
+@each $space in $spaceamounts
+	.p-#{$space}
+		padding: #{$space}px !important
+
+	.m-#{$space}
+		margin: #{$space}px !important
+
+@each $space in $spaceamounts
+  @each $side in $sides
+    .m-#{str-slice($side, 0, 1)}-#{$space}
+      margin-#{$side}: #{$space}px !important
+
+    .p-#{str-slice($side, 0, 1)}-#{$space}
+      padding-#{$side}: #{$space}px !important 
+
+.is-fullwidth 
+	width: 100% !important
+	flex: 1 !important
+
+.max-content
+	width: max-content !important
+	flex-grow: 0 !important
+
+
+.text-small
+	font-size: .75rem !important
+
+.text-extra-small
+	font-size: .5rem !important
+
+
+// Borders
+.no-border
+	border: unset !important
+
+.border-right-light
+	@include border(right, 1px, solid, $grey)
+
+.no-margin-bottom
+	margin-bottom: 0 !important
+
+.no-padding
+	padding: 0 !important
+
+.has-text-purple
+	color: #5D61B6
+
+.has-background-lightblue
+	background: #369DE2
+
+.has-background-orange
+	background: #FDAA00
+
+.padding-25
+	padding: .25rem !important
+	
+.padding-5
+	padding: .5rem
+
+.padding-75
+	padding: .75rem !important
+
+.text-6
+	font-size: .6rem
+
+.m-l-10
+	margin-left: 10px
+
+.m-t-10
+	margin-top: 10px
+
+.p-l-0
+	padding-left: 0
+
+.p-r-0
+	padding-right: 0
+
+.p-t-0
+	padding-top: 0
+
+.p-b-0
+	padding-bottom: 0
+
+.is-size-10
+	font-size: 9px
+
+.text-centered
+	text-align: center

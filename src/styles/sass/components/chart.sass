@@ -1,0 +1,152 @@
+@import 'styles/sass/_mixin.sass'
+@import 'styles/sass/_variables.sass'
+
+@keyframes vloop
+  0%
+  	margin-top: -100px
+  100%
+  	margin-top: 100px
+
+.card-chart
+	@include border-radius(10px, top)
+	@include border-radius(10px, bottom)
+	.card-header
+			@include border-radius(10px, top)
+	.card-header-title
+			color: white
+
+	&.is-blue
+		.card-header
+			background: #4572cd
+
+	&.is-lightBlue
+		.card-header
+			background: #85d1f2
+
+	&.is-green
+		.card-header
+			background: #36b27e
+
+	&.is-orange
+		.card-header
+			background: #ff850b
+
+	&.is-purple
+		.card-header
+			background: #8d1cff
+	
+	&.is-darkPurple
+		.card-header
+			background: #5757be
+
+	&.is-maroon
+		.card-header
+			background: #d54246
+
+	&.is-cyan
+		.card-header
+			background: #1dbbbb
+
+	&.is-pink
+		.card-header
+			background: #ff8787
+
+	&.is-darkGreen
+		.card-header
+			background: #2e7373
+
+	.card-image
+		height: 250px
+		text-align: center
+		transition: .35s all ease
+
+		.is-zoom &
+			height: 600px
+
+			svg, foreignObject
+				overflow: unset
+
+			.apexcharts-legend
+				border: 1px solid darken($blue, 5%)
+				@include border-radius(10px)
+				width: calc(100% - 40px)
+				margin: 0 auto
+				padding: 15px
+				bottom: -20px !important
+
+			.apexcharts-legend-series
+				flex-direction: row-reverse
+				flex: 1
+				justify-content: center
+
+				&:not(:last-child)
+					@include border(right, 1px, solid, $grey)
+
+			.apexcharts-legend-marker
+				height: 18px !important
+				width: auto !important
+				padding: 3px
+				@include flex-align-center
+				left: 10px !important
+				top: 10px !important
+
+			.custom-marker
+				color: white
+				font-size: 13px
+
+			.formatter-title
+				font-size: 10px
+
+			.formatter-total
+				font-size: 24px
+				color: darken($blue, 5%)
+
+
+		&.is-loading
+			padding-top: 50px
+
+		svg.strong
+			height: 130px
+			width: 50%
+			object-fit: contain
+			object-position: center
+
+			line
+				animation: vloop 2s 1.5s ease infinite
+
+	.apexcharts-legend
+		text-align: left
+		top: unset !important
+
+		.apexcharts-legend-series
+			@include flex-align-center
+			margin-bottom: 10px !important
+
+		.apexcharts-legend-text
+			font-family: "Poppins", sans-serif !important
+			font-weight: 600 !important
+			font-size: 10px !important
+			color: #777 !important
+
+	.apexcharts-canvas
+		.apexcharts-xaxis-label
+			font-family: "Poppins", sans-serif !important
+			font-size: 10px
+
+.box-chart
+	@media(min-width: $screen-tablet)
+		max-height: 300px
+		overflow: hidden
+		.title
+			position: absolute
+			max-width: 9%
+	@media(max-width: $screen-tablet)
+		padding: 0px
+		.title
+			padding: 1.25rem
+			margin-bottom: 0
+
+	&.custom-stroke .apexcharts-data-labels text
+		font-weight: 400
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+

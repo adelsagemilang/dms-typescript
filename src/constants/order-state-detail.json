@@ -1,0 +1,15 @@
+[
+  "transporter",
+  "truck",
+  "dispatch",
+  "arrival",
+  "inspection",
+  "waiting_loading",
+  "loading",
+  "gate_out",
+  "delivery",
+  "inspection_destination",
+  "waiting_unloading",
+  "unloading",
+  "checkout"
+]

@@ -1,0 +1,136 @@
+@import 'styles/sass/_variables.sass'
+@import 'styles/sass/_mixin.sass'
+
+#navbar-fixed-top
+    top: 0
+    left: 0
+    position: fixed
+    right: 0
+    z-index: 30
+
+    .navbar-brand
+        margin-left: 0 !important
+
+.has-dropdown.is-hoverable
+    @media(min-width: $screen-tablet)
+        &:hover #bg-primary + .navbar-dropdown
+            display: block
+
+#bg-primary
+    background-color: $primary
+    padding: 10px 17px
+    height: 100%
+
+    // &:hover + .navbar-dropdown
+    //     display: block
+
+    + .navbar-dropdown
+        display: none
+        border-top: unset
+        left: 8px
+        box-shadow: 0px 4px 15px 10px rgba(10, 10, 10, 0.1)
+        border-radius: 18px
+        padding: 30px 30px 40px
+
+    img
+        height: 1.5rem
+        width: 1.5rem
+
+@media screen and (min-width: 1024px)
+
+    &.align-center
+        display: flex
+        align-items: center
+
+.header-navbar-item
+    font-weight: 600
+    font-size: 0.8em
+    color: $grey-dark
+
+.control
+    .input.header-search-input
+        width: 120px
+        font-size: 0.8em
+        font-weight: 600
+        @include border(bottom, 2px, solid, $primary)
+        @include placeholder
+            color: $grey
+
+    &.has-icons-right
+        .icon.is-right
+            top: auto
+            bottom: 10px
+            height: auto
+            color: $primary
+            width: unset
+            font-size: 12px
+
+        .input.header-search-input
+            padding-right: 0
+
+.img-rounded
+    margin-left: 5px
+
+.icon-small
+    font-size: 10px
+    color: $grey
+
+.navbar-dropdown-items .column
+    text-align: center
+    padding-bottom: 0
+    padding-top: 0
+    width: 100px
+    height: 130px
+    display: flex
+    align-items: center
+    a
+        text-decoration: none
+    .navbar-item-icon
+        padding: 1.5rem
+        img
+            width: 100%
+            object-fit: contain
+
+        &:hover
+            background-color: $primary
+
+            img
+                filter: brightness(100)
+    .navbar-item-title
+            margin-top: .5em
+
+.navbar-item-icon
+    border: 1px solid $primary
+    padding: 1.4rem 1.2rem
+    -webkit-border-radius: 18px
+    -moz-border-radius: 18px
+    border-radius: 18px
+
+.navbar-item-icon img
+    margin: 0 auto
+
+.navbar-item-title
+    color: $black
+    font-size: 0.7rem
+    font-weight: 500
+
+.navbar-item
+    &.is-hoverable
+        padding: 0
+    &.is-hoverable:hover
+        .navbar-dropdown
+            display: block
+    .img-rounded img
+        border-radius: 32px
+        max-height: 32px
+
+.navbar-menu
+    .navbar-end .navbar-item
+        padding: 0 1.5rem
+        &:not(:last-child):after
+            content: ''
+            position: absolute
+            right: 0
+            height: 20px
+            width: 1px
+            background-color: $grey

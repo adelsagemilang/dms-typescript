@@ -1,0 +1,35 @@
+@import 'styles/sass/_variables.sass'
+@import 'styles/sass/_mixin.sass'
+
+.table-wrapper.left
+  td.error
+      background: #FFF5F8
+      color: #C74545
+  td.success
+      background: $primary
+      color: white
+
+td .kpi-progress
+  width: 50px
+  position: relative
+  border: 1px solid #DCDCDC
+  @include border-radius(3px)
+  padding: 1px
+  .progress-value
+    background: $primary
+    position: relative
+    color: white
+    text-align: center
+    height: 20px
+    font-size: 10px
+    font-weight: bold
+    line-height: 20px
+    @include border-radius(3px)
+  &.error
+    .progress-value
+      background: $soft-red
+      color: $dark-red
+  &.inactive
+    .progress-value
+      color: black
+      background: $light-grey

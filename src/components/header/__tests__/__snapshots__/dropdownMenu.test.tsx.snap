@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Menu Header Tests renders correctyly 1`] = `
+<withHelpersModifiers(NavbarDropdown)>
+  <withHelpersModifiers(Columns)
+    className="navbar-dropdown-items"
+  >
+    <withHelpersModifiers(Column)>
+      <Link
+        to="/"
+      >
+        <withHelpersModifiers(NavbarItem)
+          className="navbar-item-icon"
+        >
+          <img
+            alt="icon-home"
+            src="/../images/icon-home.png"
+          />
+        </withHelpersModifiers(NavbarItem)>
+        <div
+          className="navbar-item-title"
+        >
+          Home
+        </div>
+      </Link>
+    </withHelpersModifiers(Column)>
+    <withHelpersModifiers(Column)>
+      <div
+        className="logout"
+      >
+        <Link
+          to="/logout"
+        >
+          <withHelpersModifiers(NavbarItem)
+            className="navbar-item-icon"
+          >
+            <img
+              alt="icon-logout"
+              src="/../images/logout.svg"
+            />
+          </withHelpersModifiers(NavbarItem)>
+          <div
+            className="navbar-item-title"
+          >
+            Log Out
+          </div>
+        </Link>
+      </div>
+    </withHelpersModifiers(Column)>
+  </withHelpersModifiers(Columns)>
+</withHelpersModifiers(NavbarDropdown)>
+`;

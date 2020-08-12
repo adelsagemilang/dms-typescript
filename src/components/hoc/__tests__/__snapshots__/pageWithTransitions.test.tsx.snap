@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageWithTransitions/> renders correctyly 1`] = `
+<div
+  className="has-background-white has-transition-width "
+>
+  <withHelpersModifiers(Container)
+    isFluid={true}
+  >
+    <HeadingWithButtons
+      chartLink="/test"
+      space={true}
+      title="test"
+    />
+  </withHelpersModifiers(Container)>
+  <TestWrappedComponent />
+</div>
+`;

@@ -1,0 +1,15 @@
+@import 'styles/sass/_variables.sass'
+
+.box
+	&.total-order
+		@media(max-width: $screen-tablet)
+			.title
+				padding: 0 !important
+				margin-bottom: 2rem
+				&.has-text-primary, &.has-text-secondary
+					font-size: 2rem !important
+
+	.box-footer 
+		width: calc(100% + 2.5rem)
+		margin: 0 -1.25rem -1.25rem
+		padding: 2.5rem 1.25rem

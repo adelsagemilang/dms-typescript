@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Loader tests renders correctly 1`] = `
+<ContentLoader
+  height={400}
+  speed={2}
+  width={400}
+>
+  <rect
+    height={400}
+    rx="0"
+    ry="0"
+    width={400}
+    x="0"
+    y="0"
+  />
+</ContentLoader>
+`;
+
+exports[`Text Loader tests renders correctly while props changed 1`] = `
+<ContentLoader
+  height={400}
+  speed={2}
+  width={400}
+>
+  <rect
+    height={400}
+    rx="0"
+    ry="0"
+    width={400}
+    x="0"
+    y="0"
+  />
+</ContentLoader>
+`;
+
+exports[`Text Loader tests renders correctly while props changed 2`] = `
+<ContentLoader
+  height={300}
+  speed={2}
+  width={300}
+>
+  <rect
+    height={300}
+    rx="0"
+    ry="0"
+    width={300}
+    x="0"
+    y="0"
+  />
+</ContentLoader>
+`;

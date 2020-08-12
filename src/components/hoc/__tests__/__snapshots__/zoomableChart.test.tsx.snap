@@ -1,0 +1,509 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Zoomable Chart Component Tests Should renders correctly not zoom 1`] = `
+<Component
+  chartType="stacked"
+  data={
+    Object {
+      "chartData": Object {
+        "data": Array [],
+        "title": "",
+      },
+      "isLoading": false,
+    }
+  }
+  isZoom={false}
+  monthYear="2020-03"
+  title="Test Chart"
+  toggleZoom={[Function]}
+>
+  <withHelpersModifiers(Column)
+    className=""
+  >
+    <Column
+      className=""
+    >
+      <div
+        className="column"
+      >
+        <withHelpersModifiers(Card)
+          className="card-chart is-undefined"
+        >
+          <Card
+            className="card-chart is-undefined"
+          >
+            <div
+              className="card card-chart is-undefined"
+            >
+              <withHelpersModifiers(CardHeader)>
+                <CardHeader>
+                  <header
+                    className="card-header"
+                  >
+                    <withHelpersModifiers(CardHeaderTitle)>
+                      <CardHeaderTitle>
+                        <p
+                          className="card-header-title"
+                        >
+                          Test Chart
+                        </p>
+                      </CardHeaderTitle>
+                    </withHelpersModifiers(CardHeaderTitle)>
+                    <withHelpersModifiers(CardHeaderIcon)>
+                      <CardHeaderIcon>
+                        <a
+                          className="card-header-icon"
+                        >
+                          <ReactSwitch
+                            activeBoxShadow="0 0 2px 3px #3bf"
+                            boxShadow={null}
+                            checked={false}
+                            checkedIcon={false}
+                            className="switch"
+                            disabled={false}
+                            handleDiameter={17}
+                            height={14}
+                            id="isChecked"
+                            offColor="#888"
+                            offHandleColor="#fff"
+                            onChange={[Function]}
+                            onColor="#fff"
+                            onHandleColor="#fff"
+                            uncheckedIcon={false}
+                            width={30}
+                          >
+                            <div
+                              className="switch"
+                              style={
+                                Object {
+                                  "MozTransition": "opacity 0.25s",
+                                  "MozUserSelect": "none",
+                                  "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                                  "WebkitTransition": "opacity 0.25s",
+                                  "WebkitUserSelect": "none",
+                                  "borderRadius": 7,
+                                  "direction": "ltr",
+                                  "display": "inline-block",
+                                  "msUserSelect": "none",
+                                  "opacity": 1,
+                                  "position": "relative",
+                                  "textAlign": "left",
+                                  "touchAction": "none",
+                                  "transition": "opacity 0.25s",
+                                  "userSelect": "none",
+                                }
+                              }
+                            >
+                              <div
+                                className="react-switch-bg"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                style={
+                                  Object {
+                                    "MozTransition": "background 0.25s",
+                                    "WebkitTransition": "background 0.25s",
+                                    "background": "#888888",
+                                    "borderRadius": 7,
+                                    "cursor": "pointer",
+                                    "height": 14,
+                                    "margin": 1.5,
+                                    "position": "relative",
+                                    "transition": "background 0.25s",
+                                    "width": 30,
+                                  }
+                                }
+                              />
+                              <div
+                                className="react-switch-handle"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onTouchCancel={[Function]}
+                                onTouchEnd={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                style={
+                                  Object {
+                                    "MozTransition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                                    "WebkitTransition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                                    "background": "#ffffff",
+                                    "border": 0,
+                                    "borderRadius": "50%",
+                                    "boxShadow": null,
+                                    "cursor": "pointer",
+                                    "display": "inline-block",
+                                    "height": 17,
+                                    "outline": 0,
+                                    "position": "absolute",
+                                    "top": 0,
+                                    "transform": "translateX(0px)",
+                                    "transition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                                    "width": 17,
+                                  }
+                                }
+                              />
+                              <input
+                                checked={false}
+                                disabled={false}
+                                id="isChecked"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                onKeyUp={[Function]}
+                                role="switch"
+                                style={
+                                  Object {
+                                    "border": 0,
+                                    "clip": "rect(0 0 0 0)",
+                                    "height": 1,
+                                    "margin": -1,
+                                    "overflow": "hidden",
+                                    "padding": 0,
+                                    "position": "absolute",
+                                    "width": 1,
+                                  }
+                                }
+                                type="checkbox"
+                              />
+                            </div>
+                          </ReactSwitch>
+                        </a>
+                      </CardHeaderIcon>
+                    </withHelpersModifiers(CardHeaderIcon)>
+                  </header>
+                </CardHeader>
+              </withHelpersModifiers(CardHeader)>
+              <withHelpersModifiers(CardImage)>
+                <CardImage>
+                  <div
+                    className="card-image"
+                  >
+                    <TestWrappedComponent
+                      chartType="stacked"
+                      data={
+                        Object {
+                          "chartData": Object {
+                            "data": Array [],
+                            "title": "",
+                          },
+                          "isLoading": false,
+                        }
+                      }
+                      isZoom={false}
+                      labels={
+                        Array [
+                          "Nov",
+                          "Dec",
+                          "Jan",
+                          "Feb",
+                          "Mar",
+                        ]
+                      }
+                      monthYear="2020-03"
+                      series={
+                        Array [
+                          Object {
+                            "data": Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ],
+                            "name": "Route",
+                          },
+                          Object {
+                            "data": Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ],
+                            "name": "Volume",
+                          },
+                          Object {
+                            "data": Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ],
+                            "name": "Weight",
+                          },
+                        ]
+                      }
+                      title="Test Chart"
+                      toggleZoom={[Function]}
+                    >
+                      <div
+                        className="test"
+                      >
+                        Test
+                      </div>
+                    </TestWrappedComponent>
+                  </div>
+                </CardImage>
+              </withHelpersModifiers(CardImage)>
+            </div>
+          </Card>
+        </withHelpersModifiers(Card)>
+      </div>
+    </Column>
+  </withHelpersModifiers(Column)>
+</Component>
+`;
+
+exports[`Zoomable Chart Component Tests Should renders correctly while zoom 1`] = `
+<Component
+  chartType="stacked"
+  data={
+    Object {
+      "chartData": Object {
+        "data": Array [],
+        "title": "",
+      },
+      "isLoading": false,
+    }
+  }
+  isZoom={true}
+  monthYear="2020-03"
+  title="Test Chart"
+  toggleZoom={[Function]}
+>
+  <withHelpersModifiers(Column)
+    className="is-zoom"
+  >
+    <Column
+      className="is-zoom"
+    >
+      <div
+        className="column is-zoom"
+      >
+        <withHelpersModifiers(Card)
+          className="card-chart is-undefined"
+        >
+          <Card
+            className="card-chart is-undefined"
+          >
+            <div
+              className="card card-chart is-undefined"
+            >
+              <withHelpersModifiers(CardHeader)>
+                <CardHeader>
+                  <header
+                    className="card-header"
+                  >
+                    <withHelpersModifiers(CardHeaderTitle)>
+                      <CardHeaderTitle>
+                        <p
+                          className="card-header-title"
+                        >
+                          Test Chart
+                        </p>
+                      </CardHeaderTitle>
+                    </withHelpersModifiers(CardHeaderTitle)>
+                    <withHelpersModifiers(CardHeaderIcon)>
+                      <CardHeaderIcon>
+                        <a
+                          className="card-header-icon"
+                        >
+                          <ReactSwitch
+                            activeBoxShadow="0 0 2px 3px #3bf"
+                            boxShadow={null}
+                            checked={true}
+                            checkedIcon={false}
+                            className="switch"
+                            disabled={false}
+                            handleDiameter={17}
+                            height={14}
+                            id="isChecked"
+                            offColor="#888"
+                            offHandleColor="#fff"
+                            onChange={[Function]}
+                            onColor="#fff"
+                            onHandleColor="#fff"
+                            uncheckedIcon={false}
+                            width={30}
+                          >
+                            <div
+                              className="switch"
+                              style={
+                                Object {
+                                  "MozTransition": "opacity 0.25s",
+                                  "MozUserSelect": "none",
+                                  "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                                  "WebkitTransition": "opacity 0.25s",
+                                  "WebkitUserSelect": "none",
+                                  "borderRadius": 7,
+                                  "direction": "ltr",
+                                  "display": "inline-block",
+                                  "msUserSelect": "none",
+                                  "opacity": 1,
+                                  "position": "relative",
+                                  "textAlign": "left",
+                                  "touchAction": "none",
+                                  "transition": "opacity 0.25s",
+                                  "userSelect": "none",
+                                }
+                              }
+                            >
+                              <div
+                                className="react-switch-bg"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                style={
+                                  Object {
+                                    "MozTransition": "background 0.25s",
+                                    "WebkitTransition": "background 0.25s",
+                                    "background": "#ffffff",
+                                    "borderRadius": 7,
+                                    "cursor": "pointer",
+                                    "height": 14,
+                                    "margin": 1.5,
+                                    "position": "relative",
+                                    "transition": "background 0.25s",
+                                    "width": 30,
+                                  }
+                                }
+                              />
+                              <div
+                                className="react-switch-handle"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onTouchCancel={[Function]}
+                                onTouchEnd={[Function]}
+                                onTouchMove={[Function]}
+                                onTouchStart={[Function]}
+                                style={
+                                  Object {
+                                    "MozTransition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                                    "WebkitTransition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                                    "background": "#ffffff",
+                                    "border": 0,
+                                    "borderRadius": "50%",
+                                    "boxShadow": null,
+                                    "cursor": "pointer",
+                                    "display": "inline-block",
+                                    "height": 17,
+                                    "outline": 0,
+                                    "position": "absolute",
+                                    "top": 0,
+                                    "transform": "translateX(16px)",
+                                    "transition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+                                    "width": 17,
+                                  }
+                                }
+                              />
+                              <input
+                                checked={true}
+                                disabled={false}
+                                id="isChecked"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                onKeyUp={[Function]}
+                                role="switch"
+                                style={
+                                  Object {
+                                    "border": 0,
+                                    "clip": "rect(0 0 0 0)",
+                                    "height": 1,
+                                    "margin": -1,
+                                    "overflow": "hidden",
+                                    "padding": 0,
+                                    "position": "absolute",
+                                    "width": 1,
+                                  }
+                                }
+                                type="checkbox"
+                              />
+                            </div>
+                          </ReactSwitch>
+                        </a>
+                      </CardHeaderIcon>
+                    </withHelpersModifiers(CardHeaderIcon)>
+                  </header>
+                </CardHeader>
+              </withHelpersModifiers(CardHeader)>
+              <withHelpersModifiers(CardImage)>
+                <CardImage>
+                  <div
+                    className="card-image"
+                  >
+                    <TestWrappedComponent
+                      chartType="stacked"
+                      data={
+                        Object {
+                          "chartData": Object {
+                            "data": Array [],
+                            "title": "",
+                          },
+                          "isLoading": false,
+                        }
+                      }
+                      isZoom={true}
+                      labels={
+                        Array [
+                          "Nov",
+                          "Dec",
+                          "Jan",
+                          "Feb",
+                          "Mar",
+                        ]
+                      }
+                      monthYear="2020-03"
+                      series={
+                        Array [
+                          Object {
+                            "data": Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ],
+                            "name": "Route",
+                          },
+                          Object {
+                            "data": Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ],
+                            "name": "Volume",
+                          },
+                          Object {
+                            "data": Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ],
+                            "name": "Weight",
+                          },
+                        ]
+                      }
+                      title="Test Chart"
+                      toggleZoom={[Function]}
+                    >
+                      <div
+                        className="test"
+                      >
+                        Test
+                      </div>
+                    </TestWrappedComponent>
+                  </div>
+                </CardImage>
+              </withHelpersModifiers(CardImage)>
+            </div>
+          </Card>
+        </withHelpersModifiers(Card)>
+      </div>
+    </Column>
+  </withHelpersModifiers(Column)>
+</Component>
+`;

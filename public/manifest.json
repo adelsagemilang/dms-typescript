@@ -1,0 +1,25 @@
+{
+  "short_name": "DMS",
+  "name": "Dashboard Management System",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icon-home.png",
+      "type": "image/png",
+      "sizes": "49x45"
+    },
+    {
+      "src": "icon-home@2x.png",
+      "type": "image/png",
+      "sizes": "98x89"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,341 @@
+html, body
+  color: $black
+  font-family: "Poppins", sans-serif
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+small
+	font-size: 0.6rem !important
+	display: inline-block
+
+.text-xtra-small
+	font-size: 0.5rem !important
+	display: inline-block
+
+.container
+  max-width: 2000px !important
+
+.main-container
+	height: 100vh
+
+.background-grey
+	background-color: lighten($grey, 15%)
+
+.full-height
+	flex: 1
+	height: 100%
+
+#inner-container
+  padding-top: 20px
+
+.pointer,
+.is-hoverable
+  cursor: pointer
+
+
+.box
+	box-shadow: unset !important
+	&.outline-primary
+		border: 1px solid $primary !important
+
+	&.outline-grey
+		border: 1px solid $grey !important
+
+.has-separator-after
+	position: relative
+	&:after
+		content: ''
+		height: 60%
+		width: 1px
+		background-color: $grey
+		top: 20%
+		right: 0
+		position: absolute
+
+.box-label
+	padding: 5px !important
+	border: 1px solid #DEDEDE
+
+#content-fullgraph
+	// width: 2000px
+	overflow-x: scroll
+
+.scroll-x
+	// width: 960px
+	overflow-x: hidden
+
+#label-barstack
+	padding: 5px 15px
+
+.panelblock-header
+	background-color: #ededed
+	border-radius: 6px 6px 0 0
+	color: #363636
+	line-height: 1.25
+	padding: 0.75rem
+
+#otif-list-options
+	width: 300px
+	font-size: 0.75em
+	font-weight: 600
+	padding-top: 3px
+	& .column
+		padding: 0
+
+#otif-list-sort
+	width: 200px
+	font-size: 0.75em
+	font-weight: 600
+	padding: 2px 5px 3px
+	& .column
+		padding: 0
+
+.select-list-title
+	display: block
+	padding-top: 3px
+	padding-left: 8px
+	font-size: 9px
+
+.select-list
+	border: 0
+	background: #FFFFFF
+	font-weight: bold
+  :focus
+    outline: none !important
+
+.table-list
+	thead
+		font-size: 0.75em
+		border-bottom: 6px solid #EFF0EB
+	th
+		padding: 15px 10px !important
+		color: $grey-dark !important
+	tbody
+		font-weight: 600
+	tr
+		border-bottom: 5px solid #EFF0EB
+	&.is-striped tbody tr:not(.is-selected):nth-child(even)
+		background-color: #E9E9E9 !important
+	a
+		color: $black
+
+.height100
+	height: 100px
+
+.img-peak
+  height: 210px !important
+
+.kpi-total-panel
+	margin-bottom: 50px
+	.columns
+		margin-left: 0 !important
+		margin-right: 0 !important
+		margin-top: 0 !important
+		font-weight: 600
+	.column
+		text-align: center
+		height: 110px
+		vertical-align: middle
+		color: $black
+	.column:nth-child(odd)
+		background-color: #F5F5F5
+		font-size: 2rem !important
+	.column:nth-child(even)
+		background-color: $white
+		font-size: 2.5rem !important
+
+
+.table-assignment
+	margin-bottom: 0 !important
+	thead
+		font-size: 0.75em
+		border-bottom:	2px solid #EFF0EB
+		background-color: $grey !important
+	th
+		padding: 15px 10px !important
+		border: none !important
+		text-align: center
+	td
+		font-size: 1.75em
+		font-weight: 600
+		border: 2px solid #EEF0EB !important
+		&:first-child
+			background-color: #FAFAFA
+			font-size: 1em
+			vertical-align: middle
+			width: 150px
+	tr
+		border: 2px solid #EEF0EB
+
+.table-wrapper
+	&.left
+		width: 33%
+	&.right
+		flex: 1
+		max-width: 67%
+		overflow-x: scroll
+		
+		.table
+			width: 133%
+
+		td .kpi-progress
+			margin: 0 auto
+
+.pm-table
+  font-size: 11px
+  thead
+			th
+				height: 55px
+				text-align: center !important
+
+  thead tr, tbody tr
+    width: auto
+    clear: both
+    background: white
+    margin-bottom: 2px
+    @include border-radius(5px)
+    // @include box-shadow(0px, 3px, 6px, #0000000B)
+    th, td
+      text-align: center
+      vertical-align: middle
+      padding: 10px
+  thead > tr td, tbody tr td
+    vertical-align: middle
+    text-align: center
+    padding: 10px
+    &:nth-child(-n+4)
+      width: 90px
+      font-weight: 600
+    &:nth-child(n+5)
+      width: 100px
+
+  tbody
+  	padding: 0
+  	td
+  		height: 70px
+  		font-size: 10px
+  		font-weight: 600
+
+  &.blue tbody
+    padding: 0
+    td:nth-child(4)
+      font-size: 18px
+      font-weight: 600
+    td:nth-child(5)
+      background: $primary
+      color: white
+      font-size: 18px
+      font-weight: 600
+      &.default
+        color: black
+        background: inherit
+      &.error
+        color: $dark-red
+        background: $soft-red
+    tr:nth-child(even)
+      background: $light-grey
+    > tr
+      &:nth-child(n+5)
+        vertical-align: bottom
+      .kpi-progress
+        margin: auto
+
+  &.blue thead > tr
+    font-weight: 600
+    color: $soft-grey !important
+    vertical-align: middle
+    th
+      color: $soft-grey
+      &:nth-child(-n+5)
+        background: $primary
+        color: white !important
+
+.detail-job-order
+  padding-left: 60px !important
+  padding-top: 90px !important
+  font-size: 14px
+  .field .label
+    margin-bottom: 0
+  .label
+    color: $soft-grey
+  .control
+    color: black
+    font-weight: bold
+    &.error-label
+      color: $dark-red !important
+  .job-order .column
+    padding-top: 5px
+    padding-bottom: 5px
+  .job-order-no, .license-plate
+    font-size: 31px
+    font-weight: bold
+  .job-order-no
+    color: $primary
+
+#shipment-tracking
+  background: black
+  position: relative
+  .title
+    color: white !important
+    font-size: 40px
+    padding-left: 2%
+  .columns
+    position: absolute
+    bottom: 50px
+    background: white
+    width: 90%
+    @include border-radius(7px)
+    border-bottom: solid 5px #C74545
+    left: 6%
+    padding: 10px 20px
+    .column
+      padding: 0 15px 0 0
+      .field
+        border-right: solid 1px $grey
+      &:last-child .field
+        border: none
+    .label, .control
+      margin-bottom: 0
+      font-size: 12px
+
+.pointer
+  cursor: pointer
+
+.setting-modal .modal-card
+  width: 900px !important
+
+.modal-columns-fullwidth
+  width:100% !important
+
+.modal-footer
+  justify-content: flex-end !important
+
+.box-settings-checks
+  max-height: 300px
+  overflow: auto
+
+.paging-table
+	font-weight: 600
+	text-align: right
+	padding: 10px
+	font-size: 0.9rem
+	li
+		display: inline
+		padding: 0
+	a
+		color: $light
+	.active
+		color: $primary
+	button
+		font-weight: 600
+		font-size: 0.9rem
+		background-color: transparent
+		border: none
+		color: $light
+		outline: none
+		cursor: pointer
+		.active
+			color: $primary

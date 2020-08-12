@@ -1,0 +1,18 @@
+.container.is-fluid.wider
+	padding-left: 0
+	padding-right: 0
+
+.has-transition-width
+	@media (min-width: $screen-tablet)
+		width: 50%
+		opacity: 0
+
+		&.is-transitioned
+			width: 100%
+			opacity: 1
+			transition: .5s all ease-in
+
+			.is-fluid &
+				margin-left: -32px
+				margin-right: -32px
+				width: calc(100% + 64px)

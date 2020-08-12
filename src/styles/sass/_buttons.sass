@@ -1,0 +1,26 @@
+@import 'variables.sass'
+
+.btn-icon
+	@include border-radius(.75em)
+	padding: 7px
+	@include flex-center
+	height: 35px
+	width: 35px
+	margin: 0 4px
+	@include bg-outline
+	
+	&.is-primary 
+		@include bg-primary
+	
+	&:not(.is-primary):hover
+			@include bg-primary
+
+	svg
+		@include inherit-fill
+		stroke-width: 1px
+		&.strong
+			stroke-width: 3.5px
+
+.switch
+	.react-switch-bg
+		opacity: 0.5

@@ -1,0 +1,50 @@
+variables:
+  COMMON_NAME: "web-dms"
+  MS: "ms"
+  GIT_DEPTH: 0
+
+stages:
+  - build
+  - deploy
+
+# Docker in docker login to Google Cloud Platform
+.docker: &docker_definition
+  image: docker:stable
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
+  services:
+    - docker:dind
+  before_script:
+    - docker info
+    - echo $CI_GOOGLE_API_KEY > /tmp/$CI_PIPELINE_ID.json
+    - docker login -u _json_key -p "$(cat /tmp/$CI_PIPELINE_ID.json)" https://$GCP_HOSTNAME
+
+#==================================== start CI/CD ms-web-dms====================================
+Build:
+  <<: *docker_definition
+  stage: build
+  script:
+    - docker build -f deploy/Dockerfile -t $GCP_HOSTNAME/$GCP_PROJECT_ID/$MS-$COMMON_NAME:latest .
+    - docker push $GCP_HOSTNAME/$GCP_PROJECT_ID/$MS-$COMMON_NAME:latest
+  only:
+    - development
+  after_script:
+    - rm /tmp/$CI_PIPELINE_ID.json
+
+Deploy-to-development:
+  <<: *docker_definition
+  stage: deploy
+  image: google/cloud-sdk:alpine
+  script:
+    - echo $CI_GOOGLE_API_KEY > /tmp/$CI_PIPELINE_ID.json
+    - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
+    - gcloud config set project $GCP_PROJECT_ID
+    - gcloud -q compute ssh logan@dev-platform --zone asia-southeast1-b -- "cd  ~/devops/web/$MS-$COMMON_NAME/ && sh deploy.sh"
+  when: on_success
+  only:
+    - development
+  after_script:
+    - rm /tmp/$CI_PIPELINE_ID.json
+

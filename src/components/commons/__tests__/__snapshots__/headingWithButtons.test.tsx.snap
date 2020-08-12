@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeadingWithButtons/> renders correctly 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <HeadingWithButtons
+      chartLink="/quantity"
+      title="Quantity"
+    >
+      <withHelpersModifiers(PanelBlock)
+        className="no-border"
+      >
+        <PanelBlock
+          className="no-border"
+        >
+          <div
+            className="panel-block no-border"
+          >
+            <withHelpersModifiers(Columns)
+              className="is-fullwidth flex-align-center"
+            >
+              <Columns
+                className="is-fullwidth flex-align-center"
+              >
+                <div
+                  className="columns is-fullwidth flex-align-center"
+                >
+                  <withHelpersModifiers(Column)
+                    className="is-flex max-content"
+                  >
+                    <Column
+                      className="is-flex max-content"
+                    >
+                      <div
+                        className="column is-flex max-content"
+                      >
+                        <NavLink
+                          activeClassName="is-primary"
+                          className="btn-icon"
+                          exact={true}
+                          to="/"
+                        >
+                          <Link
+                            aria-current="page"
+                            className="btn-icon is-primary"
+                            style={Object {}}
+                            to={
+                              Object {
+                                "hash": "",
+                                "pathname": "/",
+                                "search": "",
+                                "state": null,
+                              }
+                            }
+                          >
+                            <LinkAnchor
+                              aria-current="page"
+                              className="btn-icon is-primary"
+                              href="/"
+                              navigate={[Function]}
+                              style={Object {}}
+                            >
+                              <a
+                                aria-current="page"
+                                className="btn-icon is-primary"
+                                href="/"
+                                onClick={[Function]}
+                                style={Object {}}
+                              >
+                                <FiGrid>
+                                  <IconBase
+                                    attr={
+                                      Object {
+                                        "fill": "none",
+                                        "stroke": "currentColor",
+                                        "strokeLinecap": "round",
+                                        "strokeLinejoin": "round",
+                                        "strokeWidth": "2",
+                                        "viewBox": "0 0 24 24",
+                                      }
+                                    }
+                                  >
+                                    <svg
+                                      fill="none"
+                                      height="1em"
+                                      stroke="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      style={
+                                        Object {
+                                          "color": undefined,
+                                        }
+                                      }
+                                      viewBox="0 0 24 24"
+                                      width="1em"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <rect
+                                        height="7"
+                                        key="0"
+                                        width="7"
+                                        x="3"
+                                        y="3"
+                                      />
+                                      <rect
+                                        height="7"
+                                        key="1"
+                                        width="7"
+                                        x="14"
+                                        y="3"
+                                      />
+                                      <rect
+                                        height="7"
+                                        key="2"
+                                        width="7"
+                                        x="14"
+                                        y="14"
+                                      />
+                                      <rect
+                                        height="7"
+                                        key="3"
+                                        width="7"
+                                        x="3"
+                                        y="14"
+                                      />
+                                    </svg>
+                                  </IconBase>
+                                </FiGrid>
+                              </a>
+                            </LinkAnchor>
+                          </Link>
+                        </NavLink>
+                        <NavLink
+                          activeClassName="is-primary"
+                          className="btn-icon"
+                          exact={true}
+                          to="/quantity"
+                        >
+                          <Link
+                            aria-current={null}
+                            className="btn-icon"
+                            to={
+                              Object {
+                                "hash": "",
+                                "pathname": "/quantity",
+                                "search": "",
+                                "state": null,
+                              }
+                            }
+                          >
+                            <LinkAnchor
+                              aria-current={null}
+                              className="btn-icon"
+                              href="/quantity"
+                              navigate={[Function]}
+                            >
+                              <a
+                                aria-current={null}
+                                className="btn-icon"
+                                href="/quantity"
+                                onClick={[Function]}
+                              >
+                                <FiBarChart
+                                  className="strong"
+                                >
+                                  <IconBase
+                                    attr={
+                                      Object {
+                                        "fill": "none",
+                                        "stroke": "currentColor",
+                                        "strokeLinecap": "round",
+                                        "strokeLinejoin": "round",
+                                        "strokeWidth": "2",
+                                        "viewBox": "0 0 24 24",
+                                      }
+                                    }
+                                    className="strong"
+                                  >
+                                    <svg
+                                      className="strong"
+                                      fill="none"
+                                      height="1em"
+                                      stroke="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      style={
+                                        Object {
+                                          "color": undefined,
+                                        }
+                                      }
+                                      viewBox="0 0 24 24"
+                                      width="1em"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <line
+                                        key="0"
+                                        x1="12"
+                                        x2="12"
+                                        y1="20"
+                                        y2="10"
+                                      />
+                                      <line
+                                        key="1"
+                                        x1="18"
+                                        x2="18"
+                                        y1="20"
+                                        y2="4"
+                                      />
+                                      <line
+                                        key="2"
+                                        x1="6"
+                                        x2="6"
+                                        y1="20"
+                                        y2="16"
+                                      />
+                                    </svg>
+                                  </IconBase>
+                                </FiBarChart>
+                              </a>
+                            </LinkAnchor>
+                          </Link>
+                        </NavLink>
+                      </div>
+                    </Column>
+                  </withHelpersModifiers(Column)>
+                  <withHelpersModifiers(Column)>
+                    <Column>
+                      <div
+                        className="column"
+                      >
+                        <withHelpersModifiers(Title)
+                          className="has-text-light has-text-left"
+                          isSize={5}
+                        >
+                          <Title
+                            className="has-text-light has-text-left"
+                            isSize={5}
+                          >
+                            <h1
+                              className="title is-5 has-text-light has-text-left"
+                            >
+                              Quantity
+                            </h1>
+                          </Title>
+                        </withHelpersModifiers(Title)>
+                      </div>
+                    </Column>
+                  </withHelpersModifiers(Column)>
+                </div>
+              </Columns>
+            </withHelpersModifiers(Columns)>
+          </div>
+        </PanelBlock>
+      </withHelpersModifiers(PanelBlock)>
+    </HeadingWithButtons>
+  </Router>
+</BrowserRouter>
+`;

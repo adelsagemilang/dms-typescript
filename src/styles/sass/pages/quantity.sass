@@ -1,0 +1,49 @@
+@import 'styles/sass/_variables.sass'
+
+.quantity
+	.container.p-0
+		max-width: 100%
+		@media(min-width: $screen-tablet)
+			overflow-x: scroll
+
+	.chart-wrapper
+		display: flex
+		@media(min-width: $screen-tablet)
+			width: 1930px
+
+		&.zoomed-count-1
+			width: 2620px
+
+		&.zoomed-count-2
+			width: 2900px
+
+		.columns
+			flex-wrap: wrap
+			width: 1930px
+			padding: 0 10px 0 1rem
+
+			@media(min-width: $screen-tablet)
+				padding: 0 10px 0 3rem
+
+			.column
+				flex: none
+				width: 370px
+
+			&.zoomed-count-1
+				width: 1930px
+			
+			&.zoomed-count-2
+				width: 1550px
+
+			&.zoomed
+				width: auto
+				.column
+					width: 650px
+
+	@media(max-width: $screen-tablet)
+		.card-header-icon
+			display: none
+			
+		.has-transition-width
+			.is-fluid
+				padding: 0px
